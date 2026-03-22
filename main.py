@@ -6,7 +6,6 @@ from actions.dialogs import chose_file, chose_folder
 from actions.process import FileFormatView, DownloadWideo, DownloadAuido
 from actions.messagebox import FileChosErr, FolderPathErr, ReturnErr
 from packagevalues import vidoe_settings, auido_settings
-from NotificationWindow.notifapp import NotificationWindow
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -17,10 +16,6 @@ class MainMindow(QMainWindow):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        
-        self.notif = NotificationWindow()
-        self.notif.show()
-        
         
         #None Values
         self.file_path = None
