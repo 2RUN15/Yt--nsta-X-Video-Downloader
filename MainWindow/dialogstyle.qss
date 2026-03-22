@@ -1,0 +1,32 @@
+/* --- UYARI PENCERELERİ (QMessageBox) --- */
+
+QMessageBox {
+    background-color: #2b2b2b; /* Ana pencereyle aynı koyu gri */
+    border: 1px solid #cc0000; /* Çerçevesi kırmızı olsun ki dikkat çeksin */
+}
+
+/* Mesaj Kutusu İçindeki Yazılar */
+QMessageBox QLabel {
+    color: #f0f0f0;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: transparent; /* Yazı arkası şeffaf olsun */
+}
+
+/* Mesaj Kutusu Butonları (OK, Cancel vs.) */
+QMessageBox QPushButton {
+    background-color: #cc0000; /* YouTube Kırmızısı */
+    color: white;
+    border-radius: 4px;
+    padding: 6px 15px;
+    font-weight: bold;
+    min-width: 60px; /* Butonlar çok dar olmasın */
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #ff3333; /* Üzerine gelince açılan renk */
+}
+
+QMessageBox QPushButton:pressed {
+    background-color: #990000; /* Tıklayınca koyulaşan renk */
+}

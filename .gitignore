@@ -1,0 +1,79 @@
+### --- GENEL / SİSTEM ---
+# macOS sistem dosyaları
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Windows sistem dosyaları
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+### --- IDE / EDİTÖR ---
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+*.code-workspace
+
+# Xcode (Swift projeleri için)
+build/
+DerivedData/
+*.xcuserstate
+*.xcresult
+
+### --- DİLLER ---
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# C / C++ (Derlenmiş dosyalar ve objeler)
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.lib
+*.so
+*.dylib
+
+### --- PROJELERİNE ÖZEL ---
+# Obsidian (Eğer vault içinde git kullanıyorsan)
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/cache/
+
+# Veritabanı ve CSV (Veri projelerin için)
+*.sqlite
+*.db
+*.csv
+# Not: Eğer ham verilerin (CSV) repoda olması gerekiyorsa yukarıdaki *.csv satırını silebilirsin.
+
+# YouTube Downloader / Video Dosyaları
+*.mp4
+*.mkv
+*.mp3
+*.webm
+downloads/
+
+### --- GÜVENLİK ---
+# Hassas bilgiler (API anahtarları, şifreler)
+.env
+auth_details.json
+config.py
+!config.example.py
+*.ui
